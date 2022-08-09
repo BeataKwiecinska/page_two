@@ -36,6 +36,24 @@
     }
 }
 
+/* utilyty classes */
+
+.fs-heading {
+    font-size: var(--font-size-menu);
+}
+
+.fs-paragraph {
+    font-size: var(--font-size-body);
+}
+
+.fw-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.fw-regular {
+    font-weight: var(--font-weight-regular);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -61,9 +79,6 @@ ol {
     list-style: none;
 }
 
-h1 {
-    color: var(--color-main-blue);
-    font-size: var(--font-size-big);
-    font-family: var(--font-heading);
+a {
+    text-decoration: none;
 }
-
