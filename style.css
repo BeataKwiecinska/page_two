@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Oswald:wght@200;400;600&display=swap');
 
 :root {
-    --color-main-dark: hsl(0, 0, 0);
-    --color-main-light: hsl(0, 0, 100);
-    --color-main-accent: hsl(37, 98, 53);
-    --color-main-blue: hsl(221, 51, 16);
-    --color-main-gray: hsl(0, 0, 90);
+    --color-main-dark: hsl(0, 0%, 0%);
+    --color-main-light: hsl(0, 0%, 100%);
+    --color-main-accent: hsl(37, 98%, 53%);
+    --color-main-blue: hsl(221, 51%, 16%);
+    --color-main-gray: hsl(0, 0%, 90%);
+
+    --color-text-light: var(--color-main-light);
+    --color-text-dark: var(--color-main-dark);
 
     --font-family-primary: 'Montserrat', sans-serif;
     --font-family-secendary: 'Oswald', sans-serif;
@@ -81,4 +84,36 @@ ol {
 
 a {
     text-decoration: none;
+}
+
+/* general classes */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+}
+
+p {
+    font-family: var(--font-text);
+}
+
+a {
+    font-family: var(--font-text);
+    color: var(--color-text-dark)
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 50em) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
